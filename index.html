@@ -1,78 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>RailOne</title>
+  <title>RailOne UI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#0a57ff">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-
-  <link rel="manifest" href="./manifest.json">
-  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-
-<div id="appContent">
-
-  <header class="header">
-    <img class="left" src="images/language.jpeg">
-    <img class="logo" src="images/railone.jpeg">
-    <img class="right" src="images/ghnti.jpeg">
-  </header>
-
-  <!-- Journey Planner -->
-  <section class="section">
-    <h2>Journey Planner</h2>
-    <div class="planner">
-      <div class="planner-card">
-        <div class="planner-img img1"></div>
-        <p>Reserved</p>
+  <div id="appContent">
+    <header class="header">
+      <div class="left"><img src="images/language.jpeg" alt=""></div> <img class="logo" src="images/railone.jpeg"
+        alt=""> <img class="right" src="images/ghnti.jpeg" alt="">
+    </header>
+    <section class="section">
+      <h2>Journey Planner</h2>
+      <div class="planner">
+        <div class="planner-card">
+          <div class="planner-img img1"></div>
+          <p class="planner-title">Reserved</p>
+        </div>
+        <div class="planner-card">
+          <div class="planner-img img2"></div>
+          <p class="planner-title">Unreserved</p>
+        </div>
+        <div class="planner-card">
+          <div class="planner-img img3"></div>
+          <p class="planner-title">Platform</p>
+        </div>
       </div>
-      <div class="planner-card">
-        <div class="planner-img img2"></div>
-        <p>Unreserved</p>
+    </section>
+    <section class="section">
+      <h2>More Offerings</h2>
+      <div class="grid">
+        <div class="item">
+          <div class="icon pink"> <img src="images/pink.jpeg" alt=""> </div>
+          <p>Search<br>Trains</p>
+        </div>
+        <div class="item">
+          <div class="icon green"> <img src="images/pnr.jpeg" alt=""> </div>
+          <p>PNR<br>Status</p>
+        </div>
+        <div class="item">
+          <div class="icon blue"> <img src="images/coach.jpeg" alt=""> </div>
+          <p>Coach<br>Position</p>
+        </div>
+        <div class="item">
+          <div class="icon yellow"> <img src="images/track.jpeg" alt=""> </div>
+          <p>Track<br>Your Train</p>
+        </div>
+        <div class="item">
+          <div class="icon purple"> <img src="images/order.jpeg" alt=""> </div>
+          <p>Order<br>Food</p>
+        </div>
+        <div class="item">
+          <div class="icon gray"> <img src="images/refund.jpeg" alt=""> </div>
+          <p>File<br>Refund</p>
+        </div>
+        <div class="item">
+          <div class="icon red"> <img src="images/railmadad.jpeg" alt=""> </div>
+          <p>Rail<br>Madad</p>
+        </div>
+        <div class="item">
+          <div class="icon dark"> <img src="images/waves.jpeg" alt=""> </div>
+          <p>Go To<br>WAVES</p>
+        </div>
       </div>
-      <div class="planner-card">
-        <div class="planner-img img3"></div>
-        <p>Platform</p>
+    </section>
+    <section class="section">
+      <h2>Upcoming Journey</h2>
+      <div class="ticket">
+        <p>Mon, 12 Jan 26</p>
+        <hr>
+        <div class="route"> <span>VIRAMGAM JN.</span> <span>AHMEDABAD JN.</span> </div>
+        <hr>
+        <div class="status"> <span>Unreserved</span> <button class="btn1">Book Again</button> <button class="btn2"
+            id="homeViewDetails">View Details</button> </div>
       </div>
-    </div>
-  </section>
-
-  <!-- More Offering -->
-  <section class="section">
-    <h2>More Offerings</h2>
-    <div class="grid">
-      <div class="item"><img src="images/pink.jpeg"><p>Search<br>Trains</p></div>
-      <div class="item"><img src="images/pnr.jpeg"><p>PNR<br>Status</p></div>
-      <div class="item"><img src="images/coach.jpeg"><p>Coach<br>Position</p></div>
-      <div class="item"><img src="images/track.jpeg"><p>Track<br>Your Train</p></div>
-      <div class="item"><img src="images/order.jpeg"><p>Order<br>Food</p></div>
-      <div class="item"><img src="images/refund.jpeg"><p>File<br>Refund</p></div>
-      <div class="item"><img src="images/railmadad.jpeg"><p>Rail<br>Madad</p></div>
-      <div class="item"><img src="images/waves.jpeg"><p>Go To<br>WAVES</p></div>
-    </div>
-  </section>
-
-</div>
-
-<nav class="bottom-nav">
-  <span>🏠<br>Home</span>
-  <span id="myBookingsBtn">🎟<br>My Bookings</span>
-  <span>👤<br>You</span>
-  <span>☰<br>Menu</span>
-</nav>
-
-<script src="./script.js"></script>
-
-<script>
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('./service-worker.js');
-}
-</script>
-
+    </section>
+    <section class="section">
+      <h2>Do You Know?</h2>
+      <div class="scroll">
+        <div class="info-item">
+          <div class="info-img"> <img src="images/train1.jpeg" alt=""> </div>
+          <p>First ever passenger train was ran between Bori Bandar To Thane on April 16,1853</p>
+        </div>
+        <div class="info-item">
+          <div class="info-img"> <img src="images/train2.jpeg" alt=""> </div>
+          <p>Chenab railway bridge in Dharot,Jammu & Kashmir is the World’s highest Railway Bridge.</p>
+        </div>
+        <div class="info-item">
+          <div class="info-img"> <img src="images/train3.jpeg" alt=""> </div>
+          <p>Noney Brodge is going to be world’s tallest railway bridge pier at a height of 141 meters/p>
+        </div>
+        <div class="info-item">
+          <div class="info-img"> <img src="images/train4.jpeg" alt=""> </div>
+          <p>Shree Siddharoodha Swamiji Railway Station Hubballi is world’s longest Railway Platform with length of 1505
+            meters.</p>
+        </div>
+        <div class="info-item">
+          <div class="info-img"> <img src="images/train5.jpeg" alt=""> </div>
+          <p>99% Electrification is achieved in Indian Railway.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <h2>Follow Us On Social Media Platforms</h2>
+      <div class="social"> <a href="https://x.com" target="_blank" class="social-link x-link"></a> <a
+          href="https://www.instagram.com" target="_blank" class="social-link insta-link"></a> <a
+          href="https://www.facebook.com" target="_blank" class="social-link fb-link"></a> <a
+          href="https://www.youtube.com" target="_blank" class="social-link yt-link"></a> </div>
+    </section>
+  </div>
+  <nav class="bottom-nav"> <span>🏠<br>Home</span> <span id="myBookingsBtn">🎟<br>My Bookings</span>
+    <span>👤<br>You</span> <span>☰<br>Menu</span> </nav>
+  <script src="script.js"></script>
+  <script> if ("serviceWorker" in navigator) { navigator.serviceWorker.register("./service-worker.js"); } </script>
 </body>
+
 </html>

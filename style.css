@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif
+    font-family: Arial, sans-serif;
 }
 
 body {
@@ -10,31 +10,31 @@ body {
     padding-bottom: 80px
 }
 
-.header{
-  display:grid;
-  grid-template-columns: 40px 1fr 40px;
-  align-items:center;
-  padding:0px 15px;
-  background:#fff;
-   position: sticky;
-  top: 0;
-  z-index: 1;
+.header {
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    align-items: center;
+    padding: 0px 15px;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
-.header .left img{
-  width: 3.5rem;
-  text-align:left;
+.header .left img {
+    width: 3.5rem;
+    text-align: left;
 }
 
-.header .logo{
-  width:200px;
-  margin:0 auto;
-  border-radius:8px;
+.header .logo {
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 8px;
 }
 
-.header .right{
-  width:3.5rem;
-  justify-self:end;
+.header .right {
+    width: 3.5rem;
+    justify-self: end;
 }
 
 
@@ -265,41 +265,42 @@ hr {
 .bottom-nav span {
     cursor: pointer
 }
-.social{
-  position: relative;
-  background-image: url("images/media.jpeg");
-  width: 100%;
-  height: 9.5rem;
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
+
+.social {
+    position: relative;
+    background-image: url("images/media.jpeg");
+    width: 100%;
+    height: 9.5rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
 }
 
 /* common invisible button */
-.social-link{
-  position: absolute;
-  width: 2.2rem;
-  height: 2.2rem;
-  opacity: 1;
+.social-link {
+    position: absolute;
+    width: 2.2rem;
+    height: 2.2rem;
+    opacity: 1;
 }
 
 /* 🔥 adjust these values according to image */
-.x-link{
-  left: 4.7rem;
-  top: 3.6rem;
+.x-link {
+    left: 4.7rem;
+    top: 3.6rem;
 }
 
-.insta-link{
-  left: 7.5rem;
-  top: 3.6rem;
+.insta-link {
+    left: 7.5rem;
+    top: 3.6rem;
 }
 
-.fb-link{
-  left: 10.5rem;
-  top: 3.6rem;
+.fb-link {
+    left: 10.5rem;
+    top: 3.6rem;
 }
 
-.yt-link{
-  left: 13.5rem;
-  top: 3.6rem;
+.yt-link {
+    left: 13.5rem;
+    top: 3.6rem;
 }
